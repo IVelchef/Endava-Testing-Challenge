@@ -36,6 +36,54 @@ Each task in the repository contains a corresponding `.md` file with detailed ex
 
 These files are the primary source of information regarding the methods and steps to complete the tasks.
 
+## Requirements
+
+### **REST API Task**
+
+#### **Scenario**
+
+1. **List available users**
+   - GET `/api/users
+   - Extract single user details (Id, Email).
+   - (Optional) Extract all users, sort them by **First Name** alphabetically. Print the sorted collection.
+  
+2. **Get extracted user details**
+   - GET `/api/users/{USER_ID}`
+  
+3. **Try to get details of a user that doesn't exist**
+   - GET `/api/users/{USER_ID}`
+  
+4. **Create a UNIQUE new user**
+   - POST `/api/users`
+  
+5. **Delete newly created user**
+   - DELETE `/api/users/{USER_ID}`
+  
+---
+
+### **Web UI Task**
+
+**Scenario 1**
+  
+1. Log in with the standard user.
+2. Add the **first** and **last** item in the cart, verify that the correct items are added.
+3. Remove the first item and add the previous one to the last item in the cart, verify the content again.
+4. Go to checkout.
+5. Finish the order.
+6. Verify that the order is placed.
+7. Verify that the cart is empty.
+8. Log out from the system.
+
+---
+
+**Scenario 2**
+
+1. Log in with the standard user.
+2. Verify that when sorting is selected "Price (high to low)", the items are sorted in the correct order.
+3. Log out from the system.
+
+---
+
 ## Conclusion
 
 This repository provides automated tests and documented solutions for two main aspects of testing: REST API and Web UI. Each project is separated into distinct folders with clearly defined test frameworks and documentation of approaches, making it easier to expand and maintain the tests.
