@@ -1,4 +1,4 @@
-# Project Summary: Test Data and Base Setup for API Testing
+# Test Data and Base Setup for API Testing-Reqres.in
 
 ## Overview
 This project consists of classes and configurations for API testing using REST Assured and TestNG. It includes utilities for generating unique test data, organizing reusable components, and defining a TestNG test suite.
