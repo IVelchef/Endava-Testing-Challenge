@@ -42,22 +42,11 @@ These files are the primary source of information regarding the methods and step
 
 #### **Scenario**
 
-1. **List available users**
-   - GET `/api/users
-   - Extract single user details (Id, Email).
-   - (Optional) Extract all users, sort them by **First Name** alphabetically. Print the sorted collection.
-  
-2. **Get extracted user details**
-   - GET `/api/users/{USER_ID}`
-  
-3. **Try to get details of a user that doesn't exist**
-   - GET `/api/users/{USER_ID}`
-  
-4. **Create a UNIQUE new user**
-   - POST `/api/users`
-  
-5. **Delete newly created user**
-   - DELETE `/api/users/{USER_ID}`
+1. List available users**
+2. Get extracted user details
+3. Try to get details of a user that doesn't exist
+4. Create a UNIQUE new user
+5. Delete newly created user
   
 ---
 
