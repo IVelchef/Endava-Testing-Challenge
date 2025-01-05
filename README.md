@@ -1,86 +1,41 @@
-# Endava Testing Challenge
+# Endava Testing Challenge 
 
-## Web UI Task description
-1) Inside "Web_UI_Task.md" file.
-2) You can select any programming language that Selenium WebDriver/Playwright supports.
+## Overview
 
-## REST API Task description
-1) Inside "REST_API_Task.md" file.
+This repository contains solutions for the **Endava Testing Challenge** tasks. The projects in this repository cover testing of **REST API** using Postman and REST Assured, as well as **Web UI** automation using Selenium WebDriver. Each project has a corresponding `.md` file that explains the approach and logic for completing the task.
 
-## Timebox 
-The tasks should be completed within one week. 
+## Repository Structure
 
+### 1. **Reqres POSTMAN_Endava_Challenge/**
+   This folder contains API tests in Postman, based on the public REST API [Reqres](https://reqres.in/). The tests cover the following scenarios:
+   - Listing available users
+   - Retrieving details of a specific user
+   - Test for retrieving a non-existing user
+   - Creating a new user
+   - Deleting a newly created user
+   - Parameterizing the base URL for the API
+   Each scenario is documented in the respective `.md` files.
 
+### 2. **Reqres-REST_Assured_Endava_Challenge/**
+   This folder contains API tests implemented with **REST Assured**, focusing on the same public REST API for users. The approach is similar to the Postman tests but uses Java and REST Assured to automate the tests. Here you will find:
+   - The same API tests, but in Java
+   - Full examples of JSON response validation and error handling
+   - Parameterized test cases for easy setup of the test environment
 
-# REST API Task
+### 3. **Saucedemo Tests-Selenium-WebDriver-Framework-Endava-Challenge/**
+   This folder contains automated Web UI tests based on **Selenium WebDriver**. The tests are for the public Saucedemo website, focusing on the following tasks:
+   - Logging in and adding products to the cart
+   - Verifying the correctness of added/removed items
+   - Completing an order and confirming the successful process
+   - Logging in with a user, sorting products by price, and logging out of the system
+   Each test scenario is thoroughly explained in the `.md` file within the respective folder.
 
-## Description
+## Documentation
 
-Use public REST API https://reqres.in/ to complete scenario steps.
+Each task in the repository contains a corresponding `.md` file with detailed explanations of the logic and approach for solving the tasks.
 
-## Scenario
-1. List available users
-	- GET */api/users?page=1*
-	- Execute one or many JSON Response Assertions
-	- Extract single user details (Id, Email)
-	- (Optional) Extract all users, sort them by First Name alphabetically. Print sorted collection.
-2. Get extracted user details
-	- GET */api/users/{USER_ID}*
-	- Execute one or many JSON Response Assertions
-3. Try to get details of user that doesn't exist
-	- GET */api/users/{USER_ID}*
-	- Execute one or many Assertions
-4. Create UNIQUE new user
-	- POST */api/users*
-	- Execute one or many JSON Response Assertions
-5. Delete newly created user
-	- DELETE */api/users/{USER_ID}*
-	- Execute one or many Assertions
-6. Parameterize base URL
+These files are the primary source of information regarding the methods and steps to complete the tasks.
 
+## Conclusion
 
-
-
-# Web UI Task
-
-## Description
-
-Use the [following](https://www.saucedemo.com/) public website for your automation task.
-
-The following tools/libraries can be used:
-* [Selenium](https://www.selenium.dev/)
-* [Playwright](https://playwright.dev)
-* Language of your choice that supports Selenium/Playwright
-
-Organize your solution in a zip archive and send it back. 
-Note! Please remove all the compiled/built data, if any. 
-
-## Version 1
-#### Scenario 1
-Use the standard user and password (they are prone to change, think how to obtain them)
-- Log in with the standard user
-- Add the first and the last item in the cart, verify the correct items are added
-- Remove the first item and add previous to the last item to the cart, verify the content again
-- Go to checkout
-- Finish the order
-- Verify order is placed
-- Verify cart is empty
-- Logout from the system
-
-#### Scenario 2
-
-- Log in with the standard user
-- Verify when for sorting it is selected "Price (high to low)"
-- Then the items are sorted in the correct manner
-- Logout from the system
-
-## Version 2
-Implement the tasks written in **Version 1** and do the following as well
-- Add an ability to filter tests for the test execution 
-- Add custom HTML report for the test execution
-- Tests will be executed on multiple environments (dev, testing, staging, etc..), add necessary configurations.
-- Chrome and Firefox should be supported browsers
-
-## As a bonus, per your choice
-- Support different browser resolutions
-
+This repository provides automated tests and documented solutions for two main aspects of testing: REST API and Web UI. Each project is separated into distinct folders with clearly defined test frameworks and documentation of approaches, making it easier to expand and maintain the tests.
