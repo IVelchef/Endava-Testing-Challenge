@@ -111,6 +111,6 @@ The tests have been successfully executed on the following browsers:
 - **Google Chrome Version 131.0.6778.205 (Official Build) (arm64)**
 - **Firefox Version 133.0.3**
 
-Both browsers have been tested to ensure compatibility and performance.
+Both browsers have been tested to ensure compatibility and performance
 
 
